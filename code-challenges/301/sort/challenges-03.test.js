@@ -21,7 +21,7 @@ const sortBackwards = (array) => {
   return array;
 };
 console.log(sortBackwards(mixedarr));
-// sortBackwardsRichard(mixedarr);
+// sortBackwards(mixedarr);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -33,8 +33,20 @@ In this alphabetization, capital letters come before lower case letters.
 For example, ['Alphabet', 'Zebra', 'alphabet', 'carrot'] is correctly sorted.
 ------------------------------------------------------------------------------------------------ */
 
+// const alphabetize = (arr) => {
+//   // Solution code here...
+// };
+const alphArray = ['alphabet', 'Zebra', 'Alphabet', 'carrot'];
+
+console.log(alphArray.sort());
+
 const alphabetize = (arr) => {
-  // Solution code here...
+
+arr.sort => () {
+    return arr;
+//   return array;
+  }
+    console.log(alphaArray);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -43,10 +55,24 @@ CHALLENGE 3
 Write a function named sortByLength that takes in an array of strings and returns the same array, with the strings sorted by their length, lowest to highest.
 ------------------------------------------------------------------------------------------------ */
 
-const sortByLength = (arr) => {
-  // Solution code here...
-};
+// const sortByLength = (arr) => {
+//   // Solution code here...
+// };
+let arr = ['alphabet', 'Zebra', 'Alphabet', 'carrot']; 
 
+const sortByLength = (arr) => {
+  
+  for (let i = 0; i < array.length; i++) {
+    for (let j= 0; j < array.lenght - i -1; j++) {
+let temp = array[j]
+if (array[j].lenght > array [j + 1].lenght){
+  array[j] = arrya [j + 1];
+  array[j + 1] = temp;
+}
+    }
+  }
+}
+sortByLength(arr);
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
