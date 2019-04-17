@@ -29,8 +29,8 @@ const alphaArrOfStrTwo = ['alphabet','Alphabet', 'carrot'];
 
 const alphabetize = (arr) => {
   arr.sort( (a, b) => {
-    // console.log(a, b);
-    return (a - b);
+    // console.log(a >= b);
+    return (a >= b);
   })
   return arr;
 };
