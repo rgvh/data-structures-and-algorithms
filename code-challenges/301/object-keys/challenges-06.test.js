@@ -70,10 +70,8 @@ let characters = [
 
 const getHouses = (arr) => {
   let houses = [];
-  // Solution code here...
-  return houses;
+// Solution code here...
 };
-
 /*------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
@@ -88,6 +86,14 @@ hasChildrenValues(characters, 'Eddard') will return false
 
 const hasChildrenValues = (arr, character) => {
   // Solution code here...
+  let children = 0;
+  arr.forEach(person => {
+    if (person.name === character) {
+      children = Object.values(person)[2].length > 0 ? true : false;
+    }
+  });
+  
+  return children;
 };
 
 /* ------------------------------------------------------------------------------------------------
