@@ -1,6 +1,6 @@
 'use strict';
 
-import { stringLiteral } from "@babel/types";
+// import { stringLiteral } from "@babel/types";
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1
@@ -15,13 +15,13 @@ For example, if the input is 'Welcome', the output will be:
 ['Welcome', 'elcome', 'lcome', 'come', 'ome', 'me', 'e', ''].
 ------------------------------------------------------------------------------------------------ */
 
-// const howMuchPencil = (str) => {
-//   let result = [];
-//   for(let i=0; i<=str.length; i++) {
-//     result.push();
-//   }
-//   return result;
-// };
+const howMuchPencil = (str) => {
+  let result = [];
+  for(let i = 0; i < str.length + 1; i++) {
+    result.push(str.slice(i));
+  }
+  return result;
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -127,7 +127,11 @@ For example:
 ------------------------------------------------------------------------------------------------ */
 
 const removeEvenValues = (arr) => {
-  // Solution code here...
+  for(let i = arr.length -1; i >= 0; i--) {
+    if (arr[i] % 2 === 0) {
+      arr.splice(i, 1);
+    } 
+  }
 };
 
 /* ------------------------------------------------------------------------------------------------
