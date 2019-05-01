@@ -52,7 +52,7 @@ const filterStringsWithVowels = (arrOfWords) => {
     return regex.test(word);
   })
 
-  console.log(wordsWithVowels)
+  // console.log(wordsWithVowels)
 
   return wordsWithVowels;
 };
@@ -66,7 +66,13 @@ For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 ------------------------------------------------------------------------------------------------ */
 
 const notInFirstArray = (forbiddenValues, arr) => {
-  let rightOuterJoin = (() => {})
+  let newArray = arr.filter ((value) => {
+    return !forbiddenValues.includes(value);
+  })
+
+  // console.log(newArray);
+
+  return newArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -109,7 +115,11 @@ const snorlaxData = {
 };
 
 const getBaseStatGreaterThan = (arr, minBaseStat) => {
-  // Solution code here...
+  let baseStatFiltered = arr.filter(value => value.baseStat > minBaseStat);
+
+  console.log(baseStatFiltered);
+
+  return baseStatFiltered;
 };
 
 /* ------------------------------------------------------------------------------------------------
