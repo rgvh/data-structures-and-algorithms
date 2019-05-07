@@ -9,16 +9,15 @@ Note: You may not use the array's built-in length property.
 ------------------------------------------------------------------------------------------------ */
 
 const countNumberOfElements = (arr) => {
-  arr.reduce( (accumulator, val, idx) => {
-    let countElements = accumulator + 1;
+  return arr.reduce( (accumulator) => {
+    accumulator++;
 
-    // console.log(countElements);
-    console.log(countElements);
+    // console.log(accumulator);
 
-    return countElements;
+    return accumulator;
   }, 0);
 };
-// countElements(arr);
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
@@ -76,7 +75,7 @@ let starWarsData = [{
 }];
 
 const returnNames = (arr) => {
-  const starWarsNames = arr.reduce( (acc, val, idx) => {
+  const starWarsNames = arr.reduce( (acc, val) => {
     acc.push(val.name );
     return acc;
   }, [] );
