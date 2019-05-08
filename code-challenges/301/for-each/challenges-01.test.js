@@ -95,8 +95,7 @@ This anonymous function should accept up to three arguments: the element, the in
 
 const removeWithAnon = (arr) => {
   let removeAnon = function (){
-    arr.forEach(arr);
-    if (arr %3 === 2) arr.pop();
+    forEach( %3 === 2) .pop();
   }
   removeAnon();
 };
@@ -118,9 +117,11 @@ This function should use forEach to populate your grocery list based on the stor
 ------------------------------------------------------------------------------------------------ */
 
 const createList = (availableItems) => {
-  // Solution code here...
+  let inventory = [],
+  availableItems.forEach(item);
+  if val = true 
 };
-
+return inventory;
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7
 
