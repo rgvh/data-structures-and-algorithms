@@ -94,10 +94,12 @@ This anonymous function should accept up to three arguments: the element, the in
 ------------------------------------------------------------------------------------------------ */
 
 const removeWithAnon = (arr) => {
-  let removeAnon = function (){
-    forEach(num % 3 === 2) .pop();
-  }
-  removeAnon();
+  // let removeAnon = function (){
+  //   arr.forEach(number) => {
+
+  //   } % 3 === 2) .pop();
+  // }
+  // removeAnon();
 };
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
