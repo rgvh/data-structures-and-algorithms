@@ -15,16 +15,16 @@ const count = (target, input) => {
   const flat = input.reduce((total, amount) => {
     return total.concat(amount);
   }, []);
-  console.log(flat);
+  // console.log(flat);
   const findTarget = flat.filter(value => {
-    return value === target
+    return value === target;
   });
-  console.log(findTarget);
+  // console.log(findTarget);
   const howMany = findTarget.reduce(howMany => {
     return howMany += 1;
   }, 0);
 
-  console.log(howMany);
+  // console.log(howMany);
   return howMany;
 };
 
@@ -64,7 +64,12 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 ------------------------------------------------------------------------------------------------ */
 
 const divisibleByFiveTwoToThePower = (input) => {
-  // Solution code here...
+  for(let i = 0; i < input.length; i++);
+//   let byFive = input.element[i].filter((val, idx) => {
+//     return !(val % 5);
+    
+//   console.log(byFive);
+//   })
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -130,7 +135,15 @@ let starWarsData = [{
 }];
 
 let findMaleAndFemale = (data) => {
-  // Solution code here...
+  let hasGender = data.filter((value, index) => {
+    return value.gender === 'male'|| value.gender ==='female';
+
+  });
+  console.log(hasGender);
+  // let resultArr = hasGender.name;
+  // console.log(resultsArr);
+  let resultStr = hasGender.join(' and '); 
+  return resultStr
 };
 
 /* ------------------------------------------------------------------------------------------------
