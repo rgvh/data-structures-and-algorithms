@@ -30,7 +30,7 @@ Note: if you ever need to validate an email using a regex in practice, the Inter
 ------------------------------------------------------------------------------------------------ */
 
 const validateEmail = (email) => {
-  let validator = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)*((\.com)|(\.net)|(\.org))$/g;
+  let validator = /^\w+([.-]?\w+)@\w+([.-]?\w+)*((\.com)|(\.net)|(\.org))$/g;
   return validator.test(email);
 };
 
@@ -56,7 +56,8 @@ Return either true or false.
 ------------------------------------------------------------------------------------------------ */
 
 const validatePhoneNumber = (phoneNumber) => {
-  // Solution code here...
+  let validator = /^(\(([0-9]{3})\)|([0-9]{3}))[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/g
+  return validator.test(phoneNumber);
 };
 
 /* ------------------------------------------------------------------------------------------------
