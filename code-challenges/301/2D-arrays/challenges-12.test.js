@@ -165,6 +165,7 @@ const averageDailyTemperature = (weather) => {
     for(let j = 0; j <= weather[i].length - 1; j++) {
       // console.log(weather[j]);
 
+
     }
   }
 };
