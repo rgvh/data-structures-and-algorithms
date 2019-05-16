@@ -25,6 +25,7 @@ const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 const grandTotal = stores => {
   let hourlyTotals = [];
   for (let i = 0; i <= hoursOpen.length - 1; i++) {
+
     let totalForHour = 0;
     for (let j = 0; j <= stores.length - 1; j++) {
       let sales = stores[j][i];
@@ -32,6 +33,7 @@ const grandTotal = stores => {
     }
     hourlyTotals.push(totalForHour);
   }
+
   return hourlyTotals
 };
 
@@ -72,7 +74,6 @@ const salesData = (hours, data) => {
   // }
   // // put each object onto totalSales array
   // totalSales.push(sales)
-
   // return array of objects AFTER iterating
 };
 
@@ -106,6 +107,8 @@ const howManyTreats = (arr) => {
       // console.log(sales);
     }
   }
+
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -160,6 +163,7 @@ const weeklyTemperatures = [
 
 const averageDailyTemperature = (weather) => {
   // Solution code here...
+
   for(let i = 0; i <= weather.length - 1; i++) {
     // console.log(weather[i]);
     for(let j = 0; j <= weather[i].length - 1; j++) {
@@ -168,6 +172,7 @@ const averageDailyTemperature = (weather) => {
 
     }
   }
+
 };
 
 /* ------------------------------------------------------------------------------------------------
