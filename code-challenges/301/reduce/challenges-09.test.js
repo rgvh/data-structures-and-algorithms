@@ -150,9 +150,19 @@ const characters = [
   },
 ];
 
-const countNumberOfChildren = (arr) => {
+const reducerFunction = (accumulator, currentValue) => {
+  if (currentValue.children) {
+    accumulator += currentValue.children.length
+  }
+  return accumulator;
+}
+
+const countNumberOfChildren = (charactersArray) => {
   // Solution code here...
+  return charactersArray.reduce(reducerFunction, 0);
 };
+
+// console.log(countNumberOfChildren(characters));
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5

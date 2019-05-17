@@ -25,15 +25,15 @@ const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 const grandTotal = stores => {
   let hourlyTotals = [];
   for (let i = 0; i <= hoursOpen.length - 1; i++) {
-    // console.log('Hour open: ', hoursOpen[i])
+
     let totalForHour = 0;
     for (let j = 0; j <= stores.length - 1; j++) {
       let sales = stores[j][i];
-      // console.log(sales);
       totalForHour += sales;
     }
     hourlyTotals.push(totalForHour);
-  }  
+  }
+
   return hourlyTotals
 };
 
@@ -50,18 +50,30 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 ------------------------------------------------------------------------------------------------ */
 
 const salesData = (hours, data) => {
-  // Solution code here...
-  const totalSales = [];
-  // forEeach hour
-  // collect totals for each store
-  // create new object for the values
-  const sales = {
-    sales: `${total} cookies`,
-    time: hours[index]
+  let hourlyTotals = [];
+  for (let i = 0; i <= hours.length - 1; i++) {
+    let totalForHour = 0;
+    console.log(hours[i]);
+    console.log(data[i]);
+    for (let j = 0; j <= data.length - 1; j++) {
+      let sales = data[j][i];
+      totalForHour += sales;
+    }
+    hourlyTotals.push(totalForHour);
   }
-  // put each object onto totalSales array
-  totalSales.push(sales)
-
+  console.log(hourlyTotals);
+  // Solution code here...
+  // const totalSales = [];
+  // // forEeach hour
+  // hoursOpen.forEach 
+  // // collect totals for each store
+  // // create new object for the values
+  // const sales = {
+  //   sales: `${total} cookies`,
+  //   time: hours[index]
+  // }
+  // // put each object onto totalSales array
+  // totalSales.push(sales)
   // return array of objects AFTER iterating
 };
 
@@ -88,6 +100,15 @@ const errands = [
 
 const howManyTreats = (arr) => {
   // Solution code here...
+  for(let i = 0; i <= errands.length -1; i++) {
+    // console.log('Store: ');
+    for(let j = 0; j <= errands[i].length -1; j++){
+      let howMany = items.quantity[j][i];
+      // console.log(sales);
+    }
+  }
+
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -142,6 +163,16 @@ const weeklyTemperatures = [
 
 const averageDailyTemperature = (weather) => {
   // Solution code here...
+
+  for(let i = 0; i <= weather.length - 1; i++) {
+    // console.log(weather[i]);
+    for(let j = 0; j <= weather[i].length - 1; j++) {
+      // console.log(weather[j]);
+
+
+    }
+  }
+
 };
 
 /* ------------------------------------------------------------------------------------------------
