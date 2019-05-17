@@ -122,14 +122,14 @@ This function should use forEach to populate your grocery list based on the stor
 ------------------------------------------------------------------------------------------------ */
 
 const createList = (availableItems) => {
-  let inventory = [],
-  for (let elem in createList) {
-    console.log(elem);
-  }
-  inventory.push[]
+  let inventory = [];
+  // forEach (let elem in createList) {
+  //   console.log(elem);
+  // }
+  // inventory.push[]
   // if val = true 
 };
-return inventory;
+// return inventory;
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7
 
@@ -146,6 +146,7 @@ Return the resulting output array.
 
 const fizzbuzz = (arr) => {
   // Solution code here...
+  console.log(arr);
 };
 
 /* ------------------------------------------------------------------------------------------------
