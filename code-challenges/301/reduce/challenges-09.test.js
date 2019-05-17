@@ -173,7 +173,9 @@ Hint: The accumulator should begin as { count: 0, sum: 0 }
 ------------------------------------------------------------------------------------------------ */
 
 const calculateAverage = (arr) => {
-  // Solution code here...
+  return arr.reduce((accumulator, value, index) => {
+    console.log(accumulator, value, index)
+  }, 0);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -194,7 +196,8 @@ const isPrime = (value) => {
 };
 
 const countPrimeNumbers = (arr) => {
-  // Solution code here...
+  let counter = arr.reduce
+  return counter
 };
 
 /* ------------------------------------------------------------------------------------------------
