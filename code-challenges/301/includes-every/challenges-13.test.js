@@ -60,7 +60,7 @@ For example, 'abcdefg' returns 'bdf'
 ------------------------------------------------------------------------------------------------ */
 
 const onlyOddChars = (str) => {
-  // Solution code here...
+  return str.split('').filter((element,index) => index %2 === 1).join('');
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -84,7 +84,7 @@ Write a function named findAnything that takes in an array of strings, along wit
 ------------------------------------------------------------------------------------------------ */
 
 const findAnything = (arr, target) => {
-  // Solution code here...
+  return arr.filter(string => string.includes(target));
 };
 
 /* ------------------------------------------------------------------------------------------------
