@@ -70,11 +70,12 @@ Write a function named allHappy that takes in an array of strings and returns a 
 ------------------------------------------------------------------------------------------------ */
 
 const allHappy = (arr) => {
-  let findHappy = arr.map(function(smileHappy) {
-    smileHappy.includes(':)');
-    console.log(arr)
+  return arr.every(string )
+  // let findHappy = arr.map(function(smileHappy) {
+  //   smileHappy.includes(':)');
+  //   console.log(arr)
   })
-  return findHappy;
+  // return findHappy;
 };
 
 /* ------------------------------------------------------------------------------------------------
