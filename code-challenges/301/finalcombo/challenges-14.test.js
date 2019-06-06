@@ -85,7 +85,17 @@ let starWarsData = [{
 
 let biggerThanLuke = (arr) => {
   // Solution code here...
+  // Step 1: filter array to include characters where mass > Luke
+  let biggerCharacters = arr.filter(character => parseInt(character.mass) > 77)
+
+  console.log(biggerCharacters)
+  // Step 2: join resulting array with ' - ';
+  // Step 3: return string
+
 };
+
+biggerThanLuke(starWarsData)
+// return
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -101,9 +111,21 @@ Here is an example of the input:
 This data could be sorted by name or price.
 ------------------------------------------------------------------------------------------------ */
 
+// const product = { name: 'shirt', type: 'cotton', 1: '1' }
+// product.name // 'shirt'
+// product.property // undefined
+// coolProduct.name // TypeError: cannot find property 'name' of undefined
+// let name = 'name'
+// product[name] // 'shirt'
+// product['type'] // 'cotton'
+// product[1] // '1'
+
 const sortBy = (property, arr) => {
-  arr.sort((a, b) =>  {
-    return(property.a - property.b);
+  arr.sort((a, b) => {
+    if (a[property] < b[property]) {
+      return -1;
+    }
+    return 1;
   })
   return arr;
 };
